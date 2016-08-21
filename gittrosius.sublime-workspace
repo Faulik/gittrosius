@@ -1,0 +1,1485 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getToken"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"map",
+				"mapDispatchToProps"
+			],
+			[
+				"ma",
+				"mapStateToProps"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ro",
+				"routerReducer"
+			],
+			[
+				"Ro",
+				"RootContainer"
+			],
+			[
+				"counte",
+				"counterActions"
+			],
+			[
+				"coun",
+				"counterActions"
+			],
+			[
+				"mas",
+				"mapDispatchToProps"
+			],
+			[
+				"creDe",
+				"createDevTools"
+			],
+			[
+				"crae",
+				"createDevTools"
+			],
+			[
+				"in",
+				"inactive"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"pro",
+				"promo_action"
+			],
+			[
+				"han",
+				"handleDownload〔variable〕"
+			],
+			[
+				"ben",
+				"beneficiaryAccountsActions〔variable〕"
+			],
+			[
+				"Benefac",
+				"BeneficiaryAccountsActions〔variable〕"
+			],
+			[
+				"ref",
+				"refresh"
+			],
+			[
+				"sc",
+				"scenes"
+			],
+			[
+				"sce",
+				"scenes〔variable〕"
+			],
+			[
+				"specification",
+				"specification_carousel"
+			],
+			[
+				"c",
+				"cdup	React: componentDidUpdate(pp, ps) {…}"
+			],
+			[
+				"plca",
+				"placeholder"
+			],
+			[
+				"getPrefe",
+				"getPreferencesSuceeded"
+			],
+			[
+				"Log",
+				"LoginActions"
+			],
+			[
+				"Lo",
+				"LoginActions"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"langu",
+				"languages〔variable〕"
+			],
+			[
+				"tran",
+				"translationActions〔variable〕"
+			],
+			[
+				"order",
+				"orderActions〔variable〕"
+			],
+			[
+				"Ord",
+				"OrderActions〔variable〕"
+			],
+			[
+				"tra",
+				"translate"
+			],
+			[
+				"R",
+				"RulesLinks"
+			],
+			[
+				"Share",
+				"Shareholder"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"add",
+				"add_account"
+			],
+			[
+				"statu",
+				"statuses"
+			],
+			[
+				"com",
+				"company_info"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"curr",
+				"currentItems"
+			],
+			[
+				"can",
+				"cancel"
+			],
+			[
+				"label",
+				"label_1"
+			],
+			[
+				"comp",
+				"company_name"
+			],
+			[
+				"priva",
+				"privacy"
+			],
+			[
+				"sign",
+				"sing_up"
+			],
+			[
+				"occ",
+				"occupation"
+			],
+			[
+				"comapn",
+				"company_name"
+			],
+			[
+				"fir",
+				"firstName"
+			],
+			[
+				"text",
+				"text_line_1"
+			],
+			[
+				"con",
+				"contact_line_1"
+			],
+			[
+				"conta",
+				"contacts"
+			],
+			[
+				"su",
+				"subscribe"
+			],
+			[
+				"rate",
+				"rateData"
+			],
+			[
+				"pag",
+				"paginationPages〔variable〕"
+			],
+			[
+				"jq",
+				"jquery"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"is",
+				"isNumber"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"par",
+				"parseFloat〔function〕"
+			],
+			[
+				"cur",
+				"cur:d	cursor:default"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"cu",
+				"cur:p	cursor:pointer"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"change",
+				"changeVolume"
+			],
+			[
+				"ta",
+				"target_account"
+			],
+			[
+				"fe",
+				"fetchBlogPage"
+			],
+			[
+				"fetch",
+				"fetchBlogPageByKeyword"
+			],
+			[
+				"blgo",
+				"blogActions"
+			],
+			[
+				"fet",
+				"fetchBlogPageByCategory"
+			],
+			[
+				"categ",
+				"category〔variable〕"
+			],
+			[
+				"cate",
+				"category〔variable〕"
+			],
+			[
+				"Pro",
+				"PropTypes"
+			],
+			[
+				"blog",
+				"blogActions〔variable〕"
+			],
+			[
+				"email",
+				"emailStatus〔variable〕"
+			],
+			[
+				"emai",
+				"emailStatus〔variable〕"
+			],
+			[
+				"getFa",
+				"getBlogNavigationFailed〔function〕"
+			],
+			[
+				"geteSu",
+				"getBlogNavigationSucceeded〔function〕"
+			],
+			[
+				"GETNA",
+				"GET_BLOG_NAVIGATION_FETCHED〔variable〕"
+			],
+			[
+				"Blo",
+				"BlogActions〔variable〕"
+			],
+			[
+				"const",
+				"const〔keyword〕"
+			],
+			[
+				"inv",
+				"invoices"
+			],
+			[
+				"tb",
+				"tbody"
+			],
+			[
+				"Iv",
+				"Invoices"
+			],
+			[
+				"Invo",
+				"Invoices"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"n",
+				"null"
+			],
+			[
+				"cal",
+				"calculatedValue〔variable〕"
+			],
+			[
+				"id_type",
+				"id_types"
+			],
+			[
+				"id",
+				"id_type"
+			],
+			[
+				"prefe",
+				"preferencesActions〔variable〕"
+			],
+			[
+				"scrol",
+				"scrollTo〔function〕"
+			],
+			[
+				"form",
+				"formActions〔variable〕"
+			],
+			[
+				"mapa",
+				"mapDispatchToProps〔function〕"
+			],
+			[
+				"Ema",
+				"EmailsActions"
+			],
+			[
+				"bind",
+				"bindActionCreators"
+			],
+			[
+				"hand",
+				"handleSubmit"
+			],
+			[
+				"cha",
+				"changedStyle"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"sele",
+				"selectedInput"
+			],
+			[
+				"Tra",
+				"TransactionsActions〔variable〕"
+			],
+			[
+				"bin",
+				"bindActionCreators"
+			],
+			[
+				"Pre",
+				"PreferencesActions〔variable〕"
+			],
+			[
+				"Reac",
+				"ReactDOM"
+			],
+			[
+				"num",
+				"numeral"
+			],
+			[
+				"cla",
+				"className〔variable〕"
+			],
+			[
+				"Sele",
+				"SelectTime"
+			],
+			[
+				"Gra",
+				"GraphContainer"
+			],
+			[
+				"selec",
+				"selectTermsPart"
+			],
+			[
+				"Ho",
+				"HomeActions"
+			],
+			[
+				"Ca",
+				"CalculatorActions"
+			],
+			[
+				"forma",
+				"formatData"
+			],
+			[
+				"imp",
+				"import〔keyword〕"
+			],
+			[
+				"se",
+				"selling"
+			],
+			[
+				"Co",
+				"Confirmation"
+			],
+			[
+				"Cal",
+				"CalculatorGeneralInput"
+			],
+			[
+				"Pend",
+				"PendingOrders"
+			],
+			[
+				"Ma",
+				"MatchingOrders"
+			],
+			[
+				"Sl",
+				"SelectCurrency"
+			],
+			[
+				"comap",
+				"company〔variable〕"
+			],
+			[
+				"B",
+				"BeneficiaryAccountsActions"
+			],
+			[
+				"Tr",
+				"TransactionsActions"
+			],
+			[
+				"D",
+				"Dashboard"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "⠤\n▸ .git\\\n▸ node_modules\\\n▾ src\\\n   ▾ actions\\\n      ≡ index.js\n   ▾ components\\\n      ▾ Login\\\n         ≡ index.js\n         ≡ LoginContainer.js\n   ▾ containers\\\n      ≡ AppWrapper.js\n      ≡ Root.js\n   ▾ reducers\\\n      ≡ index.js\n      ≡ user.js\n   ▾ sagas\\\n      ≡ index.js\n   ▾ services\\\n      ≡ api.js\n      ≡ index.js\n   ▸ store\\\n   ▾ styles\\\n      ≡ application.scss\n   ▾ utils\\\n      ≡ disableRouterWarnings.js\n   ≡ index.js\n   ≡ routes.js\n≡ .babelrc\n≡ index.html\n≡ package.json\n≡ README.md\n≡ server.js\n≡ webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 530,
+				"line_ending": "Unix",
+				"name": "𝌆 gittrosius",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "src/services/api.js",
+			"settings":
+			{
+				"buffer_size": 844,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/Login/index.js",
+			"settings":
+			{
+				"buffer_size": 876,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/actions/index.js",
+			"settings":
+			{
+				"buffer_size": 203,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "word",
+		"selected_items":
+		[
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"jsn",
+				"Set Syntax: JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
+			[
+				"w",
+				"Wallaby.js: Run file tests"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"pc",
+				"Package Control: Remove Package"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"plc",
+				"Package Control: List Packages"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pacage",
+				"Preferences: Browse Packages"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"raw",
+				"Raw Line Edit: Toggle"
+			],
+			[
+				"ruboco",
+				"RuboCop: Check current file"
+			],
+			[
+				"rubo",
+				"RuboCop: Toggle auto check"
+			],
+			[
+				"enable",
+				"SublimeLinter: Enable Linting"
+			],
+			[
+				"dia",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"lintdi",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"linte",
+				"SublimeLinter: Enable Linting"
+			],
+			[
+				"lint",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"li",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"pcre",
+				"Package Control: Remove Package"
+			],
+			[
+				"ru",
+				"RuboCop: Check current file"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"color",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"r",
+				"RuboCop: Check current file"
+			],
+			[
+				"stop",
+				"Debugger: Stop debugging"
+			],
+			[
+				"debusto",
+				"Debugger: Stop debugging"
+			],
+			[
+				"debug",
+				"Debugger: Start debugging (Current file)"
+			],
+			[
+				"deb",
+				"Debugger: Start debugging"
+			],
+			[
+				"cta",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"pcin",
+				"Package Control: Install Package"
+			],
+			[
+				"togta",
+				"View: Toggle Tabs"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"pcins",
+				"Package Control: Install Package"
+			],
+			[
+				"ipc",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Gist: Create Private Gist"
+			],
+			[
+				"line",
+				"Raw Line Edit: Toggle"
+			],
+			[
+				"pc i",
+				"Package Control: Install Package"
+			],
+			[
+				"term",
+				"Preferences: Terminal Key Bindings – Default"
+			]
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 583.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Dev/repo/gittrosius"
+	],
+	"file_history":
+	[
+		"/E/Dev/repo/gittrosius/src/sagas/index.js",
+		"/E/Dev/repo/gittrosius/src/index.js",
+		"/E/Dev/repo/gittrosius/server.js",
+		"/E/Dev/repo/gittrosius/src/components/Login/LoginContainer.js",
+		"/E/Dev/repo/gittrosius/src/containers/Root.js",
+		"/E/Dev/repo/gittrosius/src/utils/disableRouterWarnings.js",
+		"/E/Dev/repo/gittrosius/src/components/Login/index.js",
+		"/E/Dev/repo/gittrosius/src/routes.js",
+		"/E/Dev/repo/gittrosius/package.json",
+		"/E/Dev/repo/gittrosius/.babelrc",
+		"/E/Dev/repo/gittrosius/src/services/index.js",
+		"/E/Dev/repo/gittrosius/src/reducers/user.js",
+		"/E/Dev/repo/gittrosius/src/actions/index.js",
+		"/E/Dev/repo/gittrosius/src/reducers/index.js",
+		"/E/Dev/repo/gittrosius/src/styles/application.scss",
+		"/E/Dev/repo/gittrosius/index.html",
+		"/E/Dev/repo/gittrosius/webpack.config.js",
+		"/E/Dev/repo/gittrosius/src/actions/LoginActions.js",
+		"/E/Dev/repo/gittrosius/src/containers/AppWrapper.js",
+		"/E/Dev/repo/gittrosius/src/store/configureStore.dev.js",
+		"/E/Dev/repo/gittrosius/src/store/configureStore.js",
+		"/E/Dev/repo/gittrosius/src/actions/CounterActions.js",
+		"/E/Dev/repo/gittrosius/src/containers/Login.js",
+		"/E/Dev/repo/gittrosius/node_modules/react-hot-loader/lib/AppContainer.js",
+		"/E/Dev/repo/gittrosius/node_modules/react-hot-loader/lib/index.js",
+		"/E/Dev/repo/gittrosius/node_modules/react-hot-loader/lib/AppContainer.dev.js",
+		"/E/Dev/repo/gittrosius/node_modules/react-hot-loader/index.js",
+		"/E/Dev/repo/gittrosius/src/containers/CounterApp.js",
+		"/E/Dev/repo/gittrosius/src/services/api.js",
+		"/E/Dev/repo/gittrosius/src/reducers/counter.js",
+		"/E/Dev/repo/gittrosius/src/constants/ActionTypes.js",
+		"/E/Dev/repo/gittrosius/src/store/configureStore.prod.js",
+		"/E/Dev/repo/gittrosius/src/containers/Root.dev.js",
+		"/E/Dev/repo/gittrosius/src/containers/Root.prod.js",
+		"/E/Dev/repo/gittrosius/src/containers/DevTools.js",
+		"/E/Dev/repo/gittrosius/src/containers/App.js",
+		"/E/Dev/repo/gittrosius/config/webpack.config.js",
+		"/E/Dev/repo/gittrosius/favicon.ico",
+		"/E/Dev/repo/gittrosius/src/routes/index.js",
+		"/E/Dev/repo/gittrosius/src/reducers/todos.js",
+		"/E/Dev/repo/gittrosius/src/reducers/auth.js",
+		"/E/Dev/repo/gittrosius/src/sagas/auth.js",
+		"/E/Dev/repo/gittrosius/src/App.js",
+		"/E/Dev/repo/gittrosius/src/logo.svg",
+		"/E/Dev/repo/gittrosius/config/webpack.config.dev.js",
+		"/E/Dev/repo/gittrosius/config/paths.js",
+		"/E/Dev/repo/gittrosius/config/polyfills.js",
+		"/E/Dev/repo/gittrosius/config/eslint.js",
+		"/E/Dev/repo/gittrosius/config/babel.prod.js",
+		"/E/Dev/repo/gittrosius/config/babel.dev.js",
+		"/E/Dev/repo/gittrosius/config/flow/file.js.flow",
+		"/E/Dev/repo/gittrosius/config/flow/css.js.flow",
+		"/C/Users/Docker/mastercard-rewards/app/validators/url_validator.rb",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/actions_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/assets/stylesheets/site/custom.scss",
+		"/C/Users/Docker/mastercard-rewards/app/views/banks/_bank_cards.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/banks/show.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/assets/stylesheets/site/mobile/parts/_bank_details.scss",
+		"/C/Users/Docker/mastercard-rewards/app/assets/javascripts/site/global.js.coffee",
+		"/C/Users/Docker/mastercard-rewards/app/assets/stylesheets/site/desktop/desktop_1600/parts/_partners.scss",
+		"/C/Users/Docker/mastercard-rewards/app/assets/stylesheets/site/desktop/desktop_2500/parts/_partners.scss",
+		"/C/Users/Docker/mastercard-rewards/app/views/mobile/banks_promo/index.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/assets/javascripts/site/main.js.coffee",
+		"/C/Users/Docker/mastercard-rewards/app/views/travels/show.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/mobile/partners/index.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/models/bank_card.rb",
+		"/C/Users/Docker/mastercard-rewards/app/views/mobile/general_promo/index.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/models/concerns/sluggable.rb",
+		"/C/Users/Docker/mastercard-rewards/app/validators/custom_slug_validator.rb",
+		"/C/Users/Docker/mastercard-rewards/app/admin/bank_card.rb",
+		"/C/Users/Docker/mastercard-rewards/app/validators/without_numbers_validator.rb",
+		"/C/Users/Docker/mastercard-rewards/app/views/cabinets/show.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/banks/_bank.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/cabinets_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/views/check_cards/first_step.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/involves/show.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/cabinets/_bank.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/banks/index.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/check_cards_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/views/mobile/general_promo/_promo_action_small.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/promo_actions/index.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/general_promo/_promo_action.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/general_promo/show.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/mobile/partners/_promo_action_small.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/banks_promo_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/general_promo_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/partners_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/banks_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/helpers/application_helper.rb",
+		"/C/Users/Docker/mastercard-rewards/app/models/question.rb",
+		"/C/Users/Docker/mastercard-rewards/app/cells/components/header.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/controllers/application_controller.rb",
+		"/C/Users/Docker/mastercard-rewards/app/views/involves/result_privat.html.slim",
+		"/C/Users/Docker/mastercard-rewards/app/views/involves/result.html.slim",
+		"/C/Users/Docker/mastercard-rewards/db/migrate/20160602221603_create_questions.rb",
+		"/E/Dev/repo/kuan/app/components/trading/common/CurrencyDnD/CurrencyDnD.js",
+		"/E/Dev/repo/kuan/server.js",
+		"/E/Dev/repo/kuan/config/webpack.config.js",
+		"/E/Dev/repo/kuan/package.json",
+		"/E/Dev/repo/kuan/app/translation/zh-cn.yml",
+		"/D/Program Files (x86)/Skyrim/Data/SKSE/SKSE.ini",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/faull/Downloads/zh-cn (2).yml",
+		"/E/Dev/repo/kuan/app/components/landing/Blog/Blog.js",
+		"/E/Dev/repo/kuan/app/translation/en.yml",
+		"/E/Dev/repo/kuan/app/components/common/Table/ItemsNumber.js",
+		"/E/Dev/repo/kuan/app/actions/BeneficiaryAccounts.js",
+		"/E/Dev/repo/kuan/app/actions/Transactions.js",
+		"/E/Dev/repo/kuan/app/components/trading/Dashboard/DashboardContainer.js",
+		"/E/Dev/repo/kuan/app/components/trading/BeneficiaryAccounts/BeneficiaryAccountsTable.js",
+		"/E/Dev/repo/kuan/app/components/trading/BeneficiaryAccounts/BeneficiaryAccounts.js",
+		"/E/Dev/repo/kuan/app/components/trading/Dashboard/Orders/OrderHistory.js",
+		"/E/Dev/repo/kuan/app/components/common/Table/Pager.js",
+		"/E/Dev/repo/kuan/app/components/trading/Dashboard/Dashboard.js",
+		"/E/Dev/repo/kuan/app/utils/api.js",
+		"/E/Dev/repo/kuan/app/constants/ActionTypes.js",
+		"/E/Dev/repo/kuan/app/components/landing/Home/sections/Specification.js",
+		"/E/Dev/repo/kuan/app/components/landing/Home/sections/HowItWorks.js",
+		"/E/Dev/repo/kuan/app/components/landing/Home/parts/Subscribe.js",
+		"/E/Dev/repo/kuan/app/components/landing/Blog/Subscribe.js",
+		"/E/Dev/repo/kuan/app/components/trading/Dashboard/CompanyInfo.js",
+		"/E/Dev/repo/kuan/app/components/trading/Dashboard/Graph/customScaleMonths.js",
+		"/E/Dev/repo/kuan/app/components/trading/Dashboard/Graph/customScale.js",
+		"/E/Dev/repo/kuan/app/components/landing/Home/sections/Contacts.js",
+		"/E/Dev/repo/kuan/app/components/landing/Home/parts/ContactsForm.js",
+		"/E/Dev/repo/kuan/app/translation/index.js",
+		"/E/Dev/repo/kuan/public/index.html",
+		"/E/Dev/repo/kuan/app/actions/Translation.js"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"<open folders>",
+			"E:\\Dev\\repo\\kuan",
+			"E:\\Dev\\repo\\kuan\\app",
+			"E:\\Dev\\repo\\kuan\\",
+			"<project>,<open folders>",
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"SET_USER_TOKEN",
+			"./",
+			"#3949AB",
+			"link",
+			"Link",
+			"loginActions",
+			"LoginActions",
+			"Login",
+			"100",
+			"AppWrapper",
+			"//",
+			"CounterApp",
+			"HomeWrapper",
+			"App",
+			"select",
+			"false",
+			"src",
+			"src/",
+			"FETCHED",
+			"types.",
+			"export ",
+			"Root",
+			"root",
+			"Root",
+			"+",
+			"to_model",
+			"initMobileCarousel",
+			"card_list",
+			"when",
+			"_tab",
+			"travels",
+			".travels",
+			"card_list",
+			"card_rewards_container",
+			"travels_navigation",
+			"initTravelsNavigation",
+			"image",
+			"choose_bank",
+			"choose_bank_align",
+			"desktop_hide",
+			".header_steps",
+			"Оберіть",
+			"picture",
+			"browser",
+			"@browser",
+			"Submit",
+			"BeneficiaryAccountsActions",
+			"BENEFICIARY_ACCOUNTS",
+			"BENEFICIARY_ACCOUNTS_SUCEEDED",
+			"download",
+			"landing.home.subscribe.title",
+			"subscribe",
+			"15",
+			".todo",
+			"subscribe",
+			"SUBSCRIBE TO OUR NEWSLETTER",
+			"from 'translation'",
+			"languageChanged",
+			"languageChanged ",
+			"language",
+			"faq",
+			"restore_password ",
+			"sign_up",
+			"tw",
+			"cn",
+			"zh_cn",
+			"toooltip",
+			"toooltip_1",
+			"lang",
+			"booking",
+			"Is required",
+			"commom",
+			"currencies",
+			"Currencies",
+			"currencies",
+			"Currencies",
+			"currencies",
+			"Currencies",
+			"currencies",
+			"Currencies",
+			"currencies",
+			"Currencies",
+			"value:",
+			"'constants/Currencies'",
+			"Currencies",
+			"editBeneficiaryAccount",
+			"imageSrc",
+			"GET_PREFERENCES_FETCHED",
+			"<",
+			"booking",
+			"zero_items",
+			"Pager",
+			"invoices",
+			"spread",
+			" 	spread",
+			"})}%\n",
+			"field_agree",
+			"header_content",
+			"sign up",
+			"sign_up",
+			"Annul",
+			"question",
+			"beneficiary_account_modal",
+			"benef",
+			"preventDefault",
+			"orderConfirm",
+			"preventDefault",
+			"),\n",
+			"logoutUser",
+			".booking_details_list",
+			"european_rules",
+			"vendor",
+			"Debug",
+			"apple-icon-76x76",
+			"/apple-icon-76x76",
+			"preferred_currency_field ",
+			"Select type",
+			"\"Select file\"",
+			"preferred_currency_field",
+			".preferred_currency_field",
+			".title",
+			"sign_up",
+			"'X-Lang': lang()",
+			": lang",
+			"X-Lang;",
+			"Log in",
+			".european_rules",
+			".european_rules p"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"translate()(",
+			"t('",
+			"import { translate } from 'react-i18next';",
+			"pages.blog",
+			"\nimport { ReactPhoneInput } from 'components/common';",
+			"import ReactPhoneInput from 'react-phone-input/src/index.js';",
+			"import Griddle from 'griddle-react/build/griddle';",
+			"components/common/Table",
+			"setSubmitted",
+			"percentages"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Colorcoder/Material-Theme-Darker (Colorcoded).tmTheme",
+							"colorcode": true,
+							"default_dir": "E:\\Dev\\repo\\gittrosius",
+							"dired_count": 33,
+							"dired_index":
+							[
+								"⠤",
+								"E:\\Dev\\repo\\gittrosius\\.git\\",
+								"E:\\Dev\\repo\\gittrosius\\node_modules\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\actions\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\actions\\index.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\components\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\components\\Login\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\components\\Login\\index.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\components\\Login\\LoginContainer.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\containers\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\containers\\AppWrapper.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\containers\\Root.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\reducers\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\reducers\\index.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\reducers\\user.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\sagas\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\sagas\\index.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\services\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\services\\api.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\services\\index.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\store\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\styles\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\styles\\application.scss",
+								"E:\\Dev\\repo\\gittrosius\\src\\utils\\",
+								"E:\\Dev\\repo\\gittrosius\\src\\utils\\disableRouterWarnings.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\index.js",
+								"E:\\Dev\\repo\\gittrosius\\src\\routes.js",
+								"E:\\Dev\\repo\\gittrosius\\.babelrc",
+								"E:\\Dev\\repo\\gittrosius\\index.html",
+								"E:\\Dev\\repo\\gittrosius\\package.json",
+								"E:\\Dev\\repo\\gittrosius\\README.md",
+								"E:\\Dev\\repo\\gittrosius\\server.js",
+								"E:\\Dev\\repo\\gittrosius\\webpack.config.js"
+							],
+							"dired_path": "E:\\Dev\\repo\\gittrosius\\",
+							"dired_rename_mode": false,
+							"syntax": "Packages/FileBrowser/dired.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/services/api.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								560,
+								560
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/fox.dark (Colorcoded) (SL) (Colorcoded).tmTheme",
+							"colorcode": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/Login/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/fox.dark (Colorcoded) (SL) (Colorcoded).tmTheme",
+							"colorcode": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/actions/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/fox.dark (Colorcoded) (SL) (Colorcoded).tmTheme",
+							"colorcode": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 63.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.186979166667,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 545.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.wallabyjs":
+	{
+		"height": 86.0
+	},
+	"output.wallabyjs_console":
+	{
+		"height": 86.0
+	},
+	"pinned_build_system": "",
+	"project": "gittrosius.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"_parn",
+				"app\\assets\\stylesheets\\site\\desktop\\desktop_2500\\parts\\_partners.scss"
+			],
+			[
+				"partners.scs",
+				"app\\assets\\stylesheets\\site\\desktop\\desktop_1600\\parts\\_partners.scss"
+			],
+			[
+				"_bank_details",
+				"app\\assets\\stylesheets\\site\\mobile\\parts\\_bank_details.scss"
+			],
+			[
+				"currencydnd",
+				"app\\components\\trading\\common\\CurrencyDnD\\CurrencyDnD.js"
+			],
+			[
+				"en.",
+				"app\\translation\\en.yml"
+			],
+			[
+				"appcompare",
+				"app\\components\\landing\\common\\Compare.js"
+			],
+			[
+				"noda",
+				"app\\components\\common\\Table\\NoDataComponent.js"
+			],
+			[
+				"en.yml",
+				"app\\translation\\en.yml"
+			],
+			[
+				"upperpanel",
+				"app\\components\\trading\\Booking\\UpperPanel.js"
+			],
+			[
+				"actio",
+				"app\\constants\\ActionTypes.js"
+			],
+			[
+				"action",
+				"app\\constants\\ActionTypes.js"
+			],
+			[
+				"reducersinvo",
+				"app\\reducers\\user\\invoices.js"
+			],
+			[
+				"api",
+				"app\\utils\\api.js"
+			],
+			[
+				"shareholder",
+				"app\\components\\trading\\AddTradingAccount\\ShareholderModal.js"
+			],
+			[
+				"footer",
+				"app\\components\\common\\Footer.js"
+			],
+			[
+				"benfe",
+				"app\\reducers\\user\\beneficiaryAccounts.js"
+			],
+			[
+				"trans",
+				"app\\reducers\\user\\transactions.js"
+			],
+			[
+				"benefi",
+				"app\\reducers\\user\\beneficiaryAccounts.js"
+			],
+			[
+				"specfi",
+				"app\\components\\landing\\Home\\sections\\Specification.js"
+			],
+			[
+				"actiont",
+				"app\\constants\\ActionTypes.js"
+			],
+			[
+				"addbe",
+				"app\\components\\trading\\AddBeneficiaryAccount\\AddBeneficiaryAccount.js"
+			],
+			[
+				"actionrestore",
+				"js\\actions\\Emails\\restorePassword.js"
+			],
+			[
+				"actions",
+				"js\\constants\\actionTypes.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"owl",
+				"node_modules\\owl-carousel-2\\owl.carousel.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 544.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
