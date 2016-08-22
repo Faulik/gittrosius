@@ -1,4 +1,4 @@
-# Redux DevTools Counter example
+# Gittrosiuos
 
 ## Running Example
 
