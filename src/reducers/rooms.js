@@ -1,23 +1,33 @@
 import * as actions from 'actions';
 
-const { ROOMS, SELECT_ROOM } = actions;
+const { USER_ROOMS, SELECT_ROOM, ROOM_SEARCH, NAVIGATE_HOME } = actions;
 
 const initialState = {
-  state: 'init',
+  joinedStatus: 'init',
+  searchState: 'init',
   current: null,
-  joined: []
+  joined: [],
+  searched: []
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case ROOMS.SUCCESS:
-      return { ...state, state: 'success', joined: action.response }
-    case ROOMS.REQUEST:
-      return { ...state, state: 'pending' }
-    case ROOMS.FAILURE:
-      return { ...state, state: 'failure' }
+    case USER_ROOMS.SUCCESS:
+      return { ...state, joinedStatus: 'success', joined: action.response }
+    case USER_ROOMS.REQUEST:
+      return { ...state, joinedStatus: 'pending' }
+    case USER_ROOMS.FAILURE:
+      return { ...state, joinedStatus: 'failure' }
+    case ROOM_SEARCH.SUCCESS:
+      return { ...state, searchState: 'success', searched: action.response.results }
+    case ROOM_SEARCH.REQUEST:
+      return { ...state, searchState: 'pending' }
+    case ROOM_SEARCH.FAILURE:
+      return { ...state, searchState: 'failure' }
     case SELECT_ROOM:
       return { ...state, current: action.roomId }
+    case NAVIGATE_HOME:
+      return { ...state, current: null }
     default:
       return state;
   }

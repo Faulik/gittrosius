@@ -4,8 +4,12 @@ export const SET_USER_APP_TOKEN_SUCCESS = 'SET_USER_APP_TOKEN_SUCCESS'
 export const SIGN_OUT = 'SIGN_OUT'
 export const CHECK_ROOM = 'CHECK_ROOM'
 export const SELECT_ROOM = 'SELECT_ROOM'
-
+export const LEAVE_ROOM = 'LEAVE_ROOM'
+export const SEARCH_ROOM = 'SEARCH_ROOM'
+export const JOIN_ROOM = 'JOIN_ROOM'
 export const UPDATE_ROOM = 'UPDATE_ROOM'
+
+export const NAVIGATE_HOME = 'NAVIGATE_HOME'
 
 export const LOAD_USER = 'LOAD_USER'
 export const LOAD_ROOMS = 'LOAD_ROOMS'
@@ -29,6 +33,9 @@ export const USER = createRequestTypes('USER')
 export const USER_ROOMS = createRequestTypes('USER_ROOMS')
 export const ROOMS = createRequestTypes('ROOMS')
 export const ROOM_MESSAGES = createRequestTypes('ROOM_MESSAGES')
+export const ROOM_REMOVE_USER = createRequestTypes('ROOM_REMOVE_USER')
+export const ROOM_SEARCH = createRequestTypes('ROOM_SEARCH')
+export const ROOM_JOIN = createRequestTypes('ROOM_JOIN')
 export const MESSAGE_POST = createRequestTypes('MESSAGE_POST')
 
 function action(type, payload = {}) {
@@ -65,14 +72,37 @@ export const messagePost = {
   failure: (error) => action(MESSAGE_POST.FAILURE, {error}),
 }
 
+export const roomRemoveUser = {
+  request: () => action(ROOM_REMOVE_USER.REQUEST),
+  success: (response) => action(ROOM_REMOVE_USER.SUCCESS, {response}),
+  failure: (error) => action(ROOM_REMOVE_USER.FAILURE, {error}),
+}
+
+export const roomSearch = {
+  request: () => action(ROOM_SEARCH.REQUEST),
+  success: (response) => action(ROOM_SEARCH.SUCCESS, {response}),
+  failure: (error) => action(ROOM_SEARCH.FAILURE, {error}),
+}
+
+export const roomJoin = {
+  request: () => action(ROOM_JOIN.REQUEST),
+  success: (response) => action(ROOM_JOIN.SUCCESS, {response}),
+  failure: (error) => action(ROOM_JOIN.FAILURE, {error}),
+}
+
 export const setUserAppToken = (token) => action(SET_USER_APP_TOKEN, {token})
 export const setUserAppTokenSuccess = () => action(SET_USER_APP_TOKEN_SUCCESS)
 
 export const updateRoom = (roomId, room) => action(UPDATE_ROOM, {roomId, room})
+export const leaveRoom = (roomId) => action(LEAVE_ROOM, {roomId})
 export const checkRoom = (name) => action(CHECK_ROOM, {name})
+export const joinRoom = (uri, roomId) => action(JOIN_ROOM, {uri, roomId})
+export const searchRoom = (query) => action(SEARCH_ROOM, {query})
 export const selectRoom= (roomId, roomName) => action(SELECT_ROOM, {roomId, roomName})
 
 export const postMessage= (roomId, text) => action(POST_MESSAGE, {roomId, text})
+
+export const navigateHome = () => action(NAVIGATE_HOME)
 
 export const loadUser = () => action(LOAD_USER)
 export const loadUserRooms = () => action(LOAD_USER_ROOMS)

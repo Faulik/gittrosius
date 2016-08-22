@@ -2,8 +2,6 @@
 
 ## Running Example
 
-```
-
 Install dependencies:
 
 ```

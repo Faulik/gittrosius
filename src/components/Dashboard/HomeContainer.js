@@ -9,24 +9,56 @@ import Home from 'components/Dashboard/Home';
 class HomeContainer extends Component {
   constructor(props) {
     super(props);
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+
+    this.state = {
+      query: ''
+    }
   }
 
   componentDidMount() {
     const { actions, params } = this.props;
   }
 
-  render() {
+  handleChange(event) {
     const { actions } = this.props;
+    const query = event.target.value;
+
+    actions.searchRoom(query);
+
+    this.setState({ query });
+  }
+
+  handleSubmit(event) {
+    const { actions } = this.props;
+    const { query } = this.state;
+
+    if(event.key == 'Enter' && !event.shiftKey && query.length > 0) {
+      actions.searchRoom(query);
+      return false
+    }
+  }
+
+  render() {
+    const { actions, rooms } = this.props;
 
     return (
-      <Home/>
+      <Home
+        rooms={rooms}
+        query={this.state.query}
+        handleChange={this.handleChange}
+        handleSubmit={this.handleSubmit}
+        handleJoin={actions.joinRoom}
+      />
     );
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    lol: 'lol'
+    rooms: state.rooms.searched
   }
 }
 

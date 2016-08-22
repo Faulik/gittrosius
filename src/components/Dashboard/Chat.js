@@ -5,15 +5,24 @@ import Divider from 'material-ui/Divider';
 import TextField from 'material-ui/TextField';
 import CircularProgress from 'material-ui/CircularProgress';
 import Avatar from 'material-ui/Avatar';
+import FlatButton from 'material-ui/FlatButton';
 
-const Chat = ({ messages, room, message, handleChange, handleKeyDown }) => {
+import LeaveModal from 'components/Dashboard/LeaveModal';
+
+const Chat = ({ messages, room, message, handleChange, handleKeyDown, showLeaveModal, handleToggleLeaveModal, handleLeaveRoom }) => {
   if (!room) {
     return <div className="loading"><CircularProgress size={2}/></div>
   }
 
   return (
     <div className="box chat_container">
-      <p className="title"><Avatar src={room.avatarUrl} /><h2>{room.name}</h2></p>
+      <div className="title">
+        <Avatar src={room.avatarUrl} />
+        <h2>{room.name}</h2>
+        {!room.oneToOne &&
+          <FlatButton label="Leave" secondary={true} onClick={handleToggleLeaveModal}/>
+        }
+      </div>
       <p>{room.topic}</p>
       <Divider style={{ height: 2 }}/>
       { messages.length > 0 &&
@@ -21,7 +30,7 @@ const Chat = ({ messages, room, message, handleChange, handleKeyDown }) => {
           { messages.map((message) =>
             <ListItem
               key={message.id}
-              primaryText={'~ ' + message.fromUser.username}
+              primaryText={'@' + message.fromUser.username}
               secondaryText={<p style={{ height: 'auto' }} dangerouslySetInnerHTML={{__html: message.html}}></p>}
               />
           )}
@@ -39,6 +48,11 @@ const Chat = ({ messages, room, message, handleChange, handleKeyDown }) => {
         hintText="Message Field"
         fullWidth={true}
       />
+    <LeaveModal
+      handleClose={handleToggleLeaveModal}
+      handleSubmit={handleLeaveRoom}
+      open={showLeaveModal}
+    />
     </div>
   );
 }

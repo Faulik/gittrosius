@@ -12,31 +12,44 @@ class ChatContainer extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleKeyDown = this.handleKeyDown.bind(this);
+    this.handleLeaveRoom = this.handleLeaveRoom.bind(this);
+    this.handleToggleLeaveModal = this.handleToggleLeaveModal.bind(this);
 
     this.state = {
-      message: ''
+      message: '',
+      showLeaveModal: false
     }
   }
 
   handleChange(event) {
-    this.setState({ message: event.target.value })
+    this.setState({ message: event.target.value });
   }
 
   handleKeyDown(event) {
     const { actions, room } = this.props;
     const { message } = this.state;
 
-    if(event.key == 'Enter' && message.length > 0){
-      actions.postMessage(room.id, message)
-      this.setState({ message: '' })
+    if(event.key == 'Enter' && !event.shiftKey && message.length > 0){
+      actions.postMessage(room.id, message);
+      this.setState({ message: '' });
       return false
     }
   }
 
+  handleLeaveRoom() {
+    const { actions, room } = this.props;
+    actions.leaveRoom(room.id);
+    this.handleToggleLeaveModal();
+  }
+
+  handleToggleLeaveModal() {
+    this.setState({ showLeaveModal: !this.state.showLeaveModal });
+  }
+
   componentDidUpdate() {
-    const element = document.getElementsByClassName('chat_messages')[0]
+    const element = document.getElementsByClassName('chat_messages')[0];
     if (element) {
-      element.scrollTop = element.scrollHeight
+      element.scrollTop = element.scrollHeight;
     }
   }
 
@@ -44,8 +57,8 @@ class ChatContainer extends Component {
     const { actions, params: { repo='', channel=''}, room } = this.props;
 
     if (!room) {
-      const name = repo + (channel ? `/${channel}` : '')
-      actions.checkRoom(name)
+      const name = repo + (channel ? `/${channel}` : '');
+      actions.checkRoom(name);
     }
   }
 
@@ -59,6 +72,9 @@ class ChatContainer extends Component {
         message={this.state.message}
         handleChange={this.handleChange}
         handleKeyDown={this.handleKeyDown}
+        showLeaveModal={this.state.showLeaveModal}
+        handleLeaveRoom={this.handleLeaveRoom}
+        handleToggleLeaveModal={this.handleToggleLeaveModal}
       />
     );
   }

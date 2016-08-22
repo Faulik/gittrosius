@@ -16,7 +16,7 @@ class DashboardContainer extends Component {
 
   componentDidMount() {
     const { actions } = this.props;
-    actions.loadRooms()
+    actions.loadUserRooms()
   }
 
   handleJoin(id, name) {
@@ -33,6 +33,8 @@ class DashboardContainer extends Component {
           <RoomList
             rooms={rooms}
             onJoin={this.handleJoin}
+            current={current}
+            handleHome={actions.navigateHome}
           />
         </Paper>
         <Paper className="col-xs-8" rounded={false} zDepth={3}>
@@ -46,6 +48,7 @@ class DashboardContainer extends Component {
 const mapStateToProps = (state) => {
   return {
     rooms: state.rooms.joined,
+    current: state.rooms.current,
   }
 }
 

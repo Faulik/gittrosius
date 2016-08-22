@@ -4,10 +4,9 @@ import { takeEvery, takeLatest } from 'redux-saga';
 import { take, put, call, fork, select } from 'redux-saga/effects';
 import { api, history, local } from 'services';
 import * as actions from 'actions';
-import { getUserId } from 'reducers/selectors';
+import { getUserId, getCurrentRoom } from 'reducers/selectors';
 
-const { user, userRooms, rooms, roomMessages, messagePost } = actions;
-
+const { user, userRooms, rooms, roomMessages, messagePost, roomRemoveUser, roomSearch, roomJoin } = actions;
 
 // Subroutines
 
@@ -73,6 +72,34 @@ function* postMessage(roomId, text) {
     yield put(messagePost.failure(error))
 }
 
+function* removeUserFromRoom(roomId, userId) {
+  yield put(roomRemoveUser.request())
+  const {response, error} = yield call(api.removeUserFromRoom, roomId, userId)
+  if(response)
+    yield put(roomRemoveUser.success(response))
+  else
+    yield put(roomRemoveUser.failure(error))
+}
+
+function* fetchRoomsSearch(query) {
+  yield put(roomSearch.request())
+  const {response, error} = yield call(api.fetchRooms, query)
+  if(response)
+    yield put(roomSearch.success(response))
+  else
+    yield put(roomSearch.failure(error))
+}
+
+function* joinRoom(roomId) {
+  yield put(roomJoin.request())
+  const userId = yield select(getUserId)
+  const {response, error} = yield call(api.addRoomToUser, userId, roomId)
+  if(response)
+    yield put(roomJoin.success(response))
+  else
+    yield put(roomJoin.failure(error))
+}
+
 //  Watchers
 
 function* watchSetUserAppToken() {
@@ -113,7 +140,36 @@ function* watchSetUserAppTokenSuccess() {
 function* watchUpdateRoom() {
   while(true) {
     const {roomId, room} = yield take(actions.UPDATE_ROOM)
-    yield call(fetchRoomMessages, roomId)
+    const currentId = yield select(getCurrentRoom)
+    if (roomId == currentId) {
+      yield call(fetchRoomMessages, roomId)
+    }
+  }
+}
+
+function* watchLeaveRoom() {
+  while(true) {
+    const {roomId} = yield take(actions.LEAVE_ROOM)
+    const userId = yield select(getUserId)
+    yield call(removeUserFromRoom, roomId, userId)
+    yield fork(fetchUserRooms)
+    yield history.push('/')
+  }
+}
+
+function* watchSearchRoom() {
+  while(true) {
+    const {query} = yield take(actions.SEARCH_ROOM)
+    yield fork(fetchRoomsSearch, query)
+  }
+}
+
+function* watchJoinRoom() {
+  while(true) {
+    const {uri, roomId} = yield take(actions.JOIN_ROOM)
+    yield call(joinRoom, roomId)
+    yield call(fetchUserRooms)
+    yield history.push(`/${uri}`)
   }
 }
 
@@ -122,6 +178,13 @@ function* watchSelectRoom() {
     const {roomId, roomName} = yield take(actions.SELECT_ROOM)
     yield call(fetchRoomMessages, roomId)
     yield history.push(`/${roomName}`)
+  }
+}
+
+function* watchNavigate() {
+  while(true) {
+    yield take(actions.NAVIGATE_HOME)
+    yield history.push('/')
   }
 }
 
@@ -167,6 +230,10 @@ export default function* rootSaga() {
     fork(watchSelectRoom),
     fork(watchCheckRoom),
     fork(watchUpdateRoom),
+    fork(watchSearchRoom),
+    fork(watchLeaveRoom),
+    fork(watchJoinRoom),
+    fork(watchNavigate),
     fork(watchLoadRoomMessages),
     fork(watchPostMessage),
   ]

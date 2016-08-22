@@ -44,6 +44,9 @@ function callApi(method, endpoint, data = undefined) {
 // api services
 export const fetchUser = () => callApi('get', 'user')
 export const fetchUserRooms = (userId) => callApi('get', `user/${userId}/rooms`)
-export const fetchRooms = () => callApi('get', 'rooms')
+export const fetchRooms = (query='') => callApi('get', 'rooms' + (query ? '?q=' + encodeURIComponent(query) : ''))
+export const joinRoom = (uri) => callApi('post', 'rooms', { uri })
+export const addRoomToUser = (userId, id) => callApi('post', `user/${userId}/rooms`, { id })
 export const fetchRoomMessages = (roomId, limit=50) => callApi('get', `rooms/${roomId}/chatMessages?limit=${limit}`)
 export const postMessage = (roomId, text) => callApi('post', `rooms/${roomId}/chatMessages`, { text })
+export const removeUserFromRoom = (roomId, userId) => callApi('delete', `rooms/${roomId}/users/${userId}`)
