@@ -4,7 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FontIcon from 'material-ui/FontIcon';
 import TextField from 'material-ui/TextField';
 
-const Login = ({ handleSubmit }) => {
+const Login = ({ onSubmit, status, onChange, token }) => {
   return (
     <div className="login_form">
       <h2>Gittrosious</h2>
@@ -15,8 +15,10 @@ const Login = ({ handleSubmit }) => {
       <p>
          Copy it and paste into the textinput below.
       </p>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <TextField
+          onChange={onChange}
+          value={token}
           floatingLabelText="Paste your token here"
           fullWidth={true}
           required={true}

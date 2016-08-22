@@ -19,19 +19,27 @@ class LoginContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.onSubmit = this.onSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+
+    this.state = {
+      token: ''
+    }
   }
 
-  onSubmit(e) {
+  handleChange(e) {
+    this.setState({ token: e.target.value })
+  }
+
+  handleSubmit(e) {
     e.preventDefault();
 
     const { actions: { setUserAppToken } } = this.props;
-    const token = e.target[0].value
-    setUserAppToken(token)
+    setUserAppToken(this.state.token)
   }
 
   render() {
-    const { actions } = this.props;
+    const { actions, status } = this.props;
     return (
       <div className="col-xs-offset-4 col-xs-4">
         <Paper
@@ -39,7 +47,10 @@ class LoginContainer extends Component {
           style={style}
         >
         <Login
-          handleSubmit={this.onSubmit}
+          status={status}
+          token={this.state.token}
+          onSubmit={this.handleSubmit}
+          onChange={this.handleChange}
         />
         </Paper>
       </div>
@@ -49,7 +60,7 @@ class LoginContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    lol: 'lol'
+    status: state.user.status
   }
 }
 

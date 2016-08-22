@@ -18,13 +18,13 @@ import rootSaga from 'sagas'
 import 'flexboxgrid';
 import 'styles/application.scss';
 
-const store = configureStore();
+export const store = configureStore();
 store.runSaga(rootSaga)
 
 render(
-    <Root
-      store={ store }
-    />,
+  <Root
+    store={ store }
+  />,
   document.getElementById('root')
 );
 
@@ -33,9 +33,9 @@ if (module.hot) {
     const RootContainer = require('containers/Root').default;
 
     render(
-        <RootContainer
-          store={ store }
-        />,
+      <RootContainer
+        store={ store }
+      />,
       document.getElementById('root')
     );
   });

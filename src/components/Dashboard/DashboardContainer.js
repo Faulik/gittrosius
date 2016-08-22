@@ -5,20 +5,39 @@ import Paper from 'material-ui/Paper';
 
 import * as Actions from 'actions';
 
-import Dashboard from 'components/Dashboard';
+import RoomList from 'components/Dashboard/RoomList';
 
 class DashboardContainer extends Component {
   constructor(props) {
     super(props);
+
+    this.handleJoin = this.handleJoin.bind(this)
+  }
+
+  componentDidMount() {
+    const { actions } = this.props;
+    actions.loadRooms()
+  }
+
+  handleJoin(id, name) {
+    const { actions } = this.props;
+    actions.selectRoom(id, name)
   }
 
   render() {
-    const { actions } = this.props;
+    const { children, actions, rooms, room, current } = this.props;
 
     return (
-      <div className="col-xs-offset-4 col-xs-4">
-        <Dashboard
-        />
+      <div className="row">
+        <Paper className="col-xs-4" rounded={false}>
+          <RoomList
+            rooms={rooms}
+            onJoin={this.handleJoin}
+          />
+        </Paper>
+        <Paper className="col-xs-8" rounded={false} zDepth={3}>
+          {children}
+        </Paper>
       </div>
     );
   }
@@ -26,7 +45,7 @@ class DashboardContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    lol: 'lol'
+    rooms: state.rooms.joined,
   }
 }
 

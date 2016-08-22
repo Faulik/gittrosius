@@ -2,11 +2,12 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import { local } from 'services';
-import { setUserAppToken } from 'actions';
+import { setUserAppToken, checkRoom } from 'actions';
 import AppWrapper from 'containers/AppWrapper';
 import Login from 'components/Login/LoginContainer';
 import Dashboard from 'components/Dashboard/DashboardContainer';
-
+import Chat from 'components/Dashboard/ChatContainer';
+import Home from 'components/Dashboard/HomeContainer';
 
 export default (store) => {
   const requireAuthentication = (nextState, replace) => {
@@ -25,8 +26,10 @@ export default (store) => {
     <Route path='/'>
       <Route path='login' component={Login}/>
       <Route component={AppWrapper} onEnter={requireAuthentication}>
-        <IndexRoute component={Dashboard}>
-        </IndexRoute>
+        <Route component={Dashboard}>
+          <IndexRoute component={Home}></IndexRoute>
+          <Route path=':repo(/:channel)' component={Chat}/>
+        </Route>
       </Route>
     </Route>
   )

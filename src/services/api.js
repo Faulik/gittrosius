@@ -18,7 +18,7 @@ function callApi(method, endpoint, data = undefined) {
     'Authorization': 'Bearer ' + local.getAuthToken()
   });
 
-  const body = data ? encodeToUrlEncoded(data) : undefined
+  const body = data ? JSON.stringify(data) : undefined
 
   return fetch(fullUrl, {
       method,
@@ -43,3 +43,7 @@ function callApi(method, endpoint, data = undefined) {
 
 // api services
 export const fetchUser = () => callApi('get', 'user')
+export const fetchUserRooms = (userId) => callApi('get', `user/${userId}/rooms`)
+export const fetchRooms = () => callApi('get', 'rooms')
+export const fetchRoomMessages = (roomId, limit=50) => callApi('get', `rooms/${roomId}/chatMessages?limit=${limit}`)
+export const postMessage = (roomId, text) => callApi('post', `rooms/${roomId}/chatMessages`, { text })
