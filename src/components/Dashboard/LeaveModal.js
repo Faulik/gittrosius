@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import FlatButton from 'material-ui/FlatButton';
 import Dialog from 'material-ui/Dialog';
 
@@ -6,13 +6,13 @@ const Chat = ({ open, handleClose, handleSubmit }) => {
   const actions = [
     <FlatButton
       label="No"
-      primary={true}
-      keyboardFocused={true}
+      primary
+      keyboardFocused
       onTouchTap={handleClose}
     />,
     <FlatButton
       label="Yes"
-      primary={true}
+      primary
       onTouchTap={handleSubmit}
     />,
   ];
@@ -26,6 +26,12 @@ const Chat = ({ open, handleClose, handleSubmit }) => {
       onRequestClose={handleClose}
     />
   );
-}
+};
+
+Chat.propTypes = {
+  open: PropTypes.bool.isRequired,
+  handleClose: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+};
 
 export default Chat;

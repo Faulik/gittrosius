@@ -7,28 +7,28 @@ const initialState = {
   searchState: 'init',
   current: null,
   joined: [],
-  searched: []
-}
+  searched: [],
+};
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case USER_ROOMS.SUCCESS:
-      return { ...state, joinedStatus: 'success', joined: action.response }
+      return { ...state, joinedStatus: 'success', joined: action.response };
     case USER_ROOMS.REQUEST:
-      return { ...state, joinedStatus: 'pending' }
+      return { ...state, joinedStatus: 'pending' };
     case USER_ROOMS.FAILURE:
-      return { ...state, joinedStatus: 'failure' }
+      return { ...state, joinedStatus: 'failure' };
     case ROOM_SEARCH.SUCCESS:
-      return { ...state, searchState: 'success', searched: action.response.results }
+      return { ...state, searchState: 'success', searched: action.response.results };
     case ROOM_SEARCH.REQUEST:
-      return { ...state, searchState: 'pending' }
+      return { ...state, searchState: 'pending' };
     case ROOM_SEARCH.FAILURE:
-      return { ...state, searchState: 'failure' }
+      return { ...state, searchState: 'failure' };
     case SELECT_ROOM:
-      return { ...state, current: action.roomId }
+      return { ...state, current: action.roomId };
     case NAVIGATE_HOME:
-      return { ...state, current: null }
+      return { ...state, current: null };
     default:
       return state;
   }
-}
+};

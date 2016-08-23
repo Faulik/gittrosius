@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Provider } from 'react-redux';
-import { Router } from 'react-router';
-import { browserHistory } from 'react-router';
+import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
@@ -10,7 +9,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import crateRoutes from 'routes';
 
-
+// eslint-disable-next-line react/prefer-stateless-function
 export default class Root extends Component {
   render() {
     const { store } = this.props;
@@ -29,3 +28,7 @@ export default class Root extends Component {
     );
   }
 }
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+};

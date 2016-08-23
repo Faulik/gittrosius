@@ -10,12 +10,12 @@ class HomeContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 
     this.state = {
-      query: ''
-    }
+      query: '',
+    };
   }
 
   componentDidMount() {
@@ -35,9 +35,9 @@ class HomeContainer extends Component {
     const { actions } = this.props;
     const { query } = this.state;
 
-    if(event.key == 'Enter' && !event.shiftKey && query.length > 0) {
+    if (event.key === 'Enter' && !event.shiftKey && query.length > 0) {
       actions.searchRoom(query);
-      return false
+      return false;
     }
   }
 
@@ -56,16 +56,21 @@ class HomeContainer extends Component {
   }
 }
 
+HomeContainer.propTypes = {
+  rooms: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired,
+};
+
 const mapStateToProps = (state) => {
   return {
-    rooms: state.rooms.searched
-  }
-}
+    rooms: state.rooms.searched,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators(Actions, dispatch)
-  }
-}
+    actions: bindActionCreators(Actions, dispatch),
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);

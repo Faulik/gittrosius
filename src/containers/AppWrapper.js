@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import AppBar from 'material-ui/AppBar';
 
-class AppWrapper extends Component {
+// eslint-disable-next-line react/prefer-stateless-function
+export default class AppWrapper extends Component {
   render() {
     return (
       this.props.children
@@ -9,4 +9,6 @@ class AppWrapper extends Component {
   }
 }
 
-export default AppWrapper;
+AppWrapper.propTypes = {
+  children: PropTypes.element.isRequired,
+};

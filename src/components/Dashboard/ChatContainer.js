@@ -17,7 +17,23 @@ class ChatContainer extends Component {
 
     this.state = {
       message: '',
-      showLeaveModal: false
+      showLeaveModal: false,
+    };
+  }
+
+  componentDidMount() {
+    const { actions, params: { repo = '', channel = '' }, room } = this.props;
+
+    if (!room) {
+      const name = repo + (channel ? `/${channel}` : '');
+      actions.checkRoom(name);
+    }
+  }
+
+  componentDidUpdate() {
+    const element = document.getElementsByClassName('chat_messages')[0];
+    if (element) {
+      element.scrollTop = element.scrollHeight;
     }
   }
 
@@ -29,11 +45,13 @@ class ChatContainer extends Component {
     const { actions, room } = this.props;
     const { message } = this.state;
 
-    if(event.key == 'Enter' && !event.shiftKey && message.length > 0){
+    if (event.key === 'Enter' && !event.shiftKey && message.length > 0) {
       actions.postMessage(room.id, message);
       this.setState({ message: '' });
-      return false
+      return false;
     }
+
+    return true;
   }
 
   handleLeaveRoom() {
@@ -46,24 +64,8 @@ class ChatContainer extends Component {
     this.setState({ showLeaveModal: !this.state.showLeaveModal });
   }
 
-  componentDidUpdate() {
-    const element = document.getElementsByClassName('chat_messages')[0];
-    if (element) {
-      element.scrollTop = element.scrollHeight;
-    }
-  }
-
-  componentDidMount() {
-    const { actions, params: { repo='', channel=''}, room } = this.props;
-
-    if (!room) {
-      const name = repo + (channel ? `/${channel}` : '');
-      actions.checkRoom(name);
-    }
-  }
-
   render() {
-    const { actions, messages, room } = this.props;
+    const { messages, room } = this.props;
 
     return (
       <Chat
@@ -80,19 +82,26 @@ class ChatContainer extends Component {
   }
 }
 
+ChatContainer.propTypes = {
+  messages: PropTypes.array.isRequired,
+  room: PropTypes.object,
+  actions: PropTypes.object.isRequired,
+  params: PropTypes.object.isRequired,
+};
+
 const mapStateToProps = (state) => {
-  const current = state.rooms.current
-  const room = current ? state.rooms.joined.find((room) => room.id === current) : undefined
+  const current = state.rooms.current;
+  const currentRoom = current ? state.rooms.joined.find((room) => room.id === current) : undefined;
   return {
     messages: state.messages.visible,
-    room
-  }
-}
+    room: currentRoom,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators(Actions, dispatch)
-  }
-}
+    actions: bindActionCreators(Actions, dispatch),
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChatContainer);

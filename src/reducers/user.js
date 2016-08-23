@@ -1,7 +1,7 @@
 import * as actions from 'actions';
 
 const { SET_USER_APP_TOKEN, SET_USER_APP_TOKEN_SUCCESS, SIGN_OUT } = actions;
-const { USER, USER_ROOMS } = actions;
+const { USER } = actions;
 
 const initialState = {
   isAuthenticated: false,
@@ -16,24 +16,24 @@ const initialState = {
   providers: [],
   url: null,
   username: null,
-  v: null
-}
+  v: null,
+};
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case SET_USER_APP_TOKEN:
-      return { ...state, token: action.token}
+      return { ...state, token: action.token };
     case SET_USER_APP_TOKEN_SUCCESS:
-      return { ...state, isAuthenticated: true}
+      return { ...state, isAuthenticated: true };
     case SIGN_OUT:
-      return initialState
+      return initialState;
     case USER.SUCCESS:
-      return { ...state, loginStatus: 'success', ...action.response}
+      return { ...state, loginStatus: 'success', ...action.response };
     case USER.REQUEST:
-      return { ...state, loginStatus: 'pending'}
+      return { ...state, loginStatus: 'pending' };
     case USER.FAILURE:
-      return { ...state, loginStatus: 'failure', isAuthenticated: false}
+      return { ...state, loginStatus: 'failure', isAuthenticated: false };
     default:
       return state;
   }
-}
+};

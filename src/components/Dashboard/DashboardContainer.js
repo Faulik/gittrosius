@@ -11,21 +11,21 @@ class DashboardContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.handleJoin = this.handleJoin.bind(this)
+    this.handleJoin = this.handleJoin.bind(this);
   }
 
   componentDidMount() {
     const { actions } = this.props;
-    actions.loadUserRooms()
+    actions.loadUserRooms();
   }
 
   handleJoin(id, name) {
     const { actions } = this.props;
-    actions.selectRoom(id, name)
+    actions.selectRoom(id, name);
   }
 
   render() {
-    const { children, actions, rooms, room, current } = this.props;
+    const { children, actions, rooms, current } = this.props;
 
     return (
       <div className="row">
@@ -46,17 +46,24 @@ class DashboardContainer extends Component {
   }
 }
 
+DashboardContainer.propTypes = {
+  rooms: PropTypes.array.isRequired,
+  current: PropTypes.string,
+  actions: PropTypes.object.isRequired,
+  children: PropTypes.element.isRequired,
+};
+
 const mapStateToProps = (state) => {
   return {
     rooms: state.rooms.joined,
     current: state.rooms.current,
-  }
-}
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators(Actions, dispatch)
-  }
-}
+    actions: bindActionCreators(Actions, dispatch),
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(DashboardContainer);

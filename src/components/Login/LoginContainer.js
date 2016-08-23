@@ -19,55 +19,61 @@ class LoginContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.handleSubmit = this.handleSubmit.bind(this)
-    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
 
     this.state = {
-      token: ''
-    }
+      token: '',
+    };
   }
 
   handleChange(e) {
-    this.setState({ token: e.target.value })
+    this.setState({ token: e.target.value });
   }
 
   handleSubmit(e) {
     e.preventDefault();
 
     const { actions: { loginUserByToken } } = this.props;
-    loginUserByToken(this.state.token)
+    loginUserByToken(this.state.token);
   }
 
   render() {
-    const { actions, status } = this.props;
+    const { status } = this.props;
     return (
       <div className="col-xs-offset-4 col-xs-4">
         <Paper
           zDepth={1}
           style={style}
         >
-        <Login
-          status={status}
-          token={this.state.token}
-          onSubmit={this.handleSubmit}
-          onChange={this.handleChange}
-        />
+          <Login
+            status={status}
+            token={this.state.token}
+            onSubmit={this.handleSubmit}
+            onChange={this.handleChange}
+          />
         </Paper>
       </div>
     );
   }
 }
 
+LoginContainer.propTypes = {
+  actions: PropTypes.object.isRequired,
+  status: PropTypes.string.isRequired,
+};
+
+
 const mapStateToProps = (state) => {
   return {
-    status: state.user.loginStatus
-  }
-}
+    status: state.user.loginStatus,
+  };
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actions: bindActionCreators(Actions, dispatch)
-  }
-}
+    actions: bindActionCreators(Actions, dispatch),
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(LoginContainer);

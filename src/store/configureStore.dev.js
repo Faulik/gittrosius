@@ -1,12 +1,11 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import { persistState } from 'redux-devtools';
-import createSagaMiddleware, { END } from 'redux-saga'
+import createSagaMiddleware, { END } from 'redux-saga';
 
 import rootReducer from 'reducers';
-import rootSaga from 'sagas'
 
 export default function configureStore(initialState) {
-  const sagaMiddleware = createSagaMiddleware()
+  const sagaMiddleware = createSagaMiddleware();
 
   const enhancer = compose(
     applyMiddleware(sagaMiddleware),
@@ -21,12 +20,13 @@ export default function configureStore(initialState) {
 
   if (module.hot) {
     module.hot.accept('reducers', () =>
+      // eslint-disable-next-line global-require
       store.replaceReducer(require('reducers').default)
     );
   }
 
-  store.runSaga = sagaMiddleware.run
-  store.close = () => store.dispatch(END)
+  store.runSaga = sagaMiddleware.run;
+  store.close = () => store.dispatch(END);
 
   return store;
 }
