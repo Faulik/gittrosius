@@ -6,7 +6,7 @@ import FlatButton from 'material-ui/FlatButton';
 import { history } from 'services';
 
 
-const RoomList = ({ rooms=[], onJoin, current, handleHome }) => {
+const RoomList = ({ rooms=[], onJoin, current, handleHome, handleLogout }) => {
   return (
     <div className="sidebar">
       <br/>
@@ -23,6 +23,8 @@ const RoomList = ({ rooms=[], onJoin, current, handleHome }) => {
             />
         )}
       </List>
+      <FlatButton label="Log out" secondary={true} onClick={handleLogout}/>
+      <br/>
     </div>
   );
 }

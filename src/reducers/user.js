@@ -5,7 +5,7 @@ const { USER, USER_ROOMS } = actions;
 
 const initialState = {
   isAuthenticated: false,
-  state: 'init',
+  loginStatus: 'init',
   token: null,
   avatarUrl: null,
   avatarUrlMedium: null,
@@ -28,11 +28,11 @@ export default (state = initialState, action) => {
     case SIGN_OUT:
       return initialState
     case USER.SUCCESS:
-      return { ...state, state: 'success', ...action.response}
+      return { ...state, loginStatus: 'success', ...action.response}
     case USER.REQUEST:
-      return { ...state, state: 'pending'}
+      return { ...state, loginStatus: 'pending'}
     case USER.FAILURE:
-      return { ...state, state: 'failure', isAuthenticated: false}
+      return { ...state, loginStatus: 'failure', isAuthenticated: false}
     default:
       return state;
   }

@@ -35,6 +35,7 @@ class DashboardContainer extends Component {
             onJoin={this.handleJoin}
             current={current}
             handleHome={actions.navigateHome}
+            handleLogout={actions.logoutUser}
           />
         </Paper>
         <Paper className="col-xs-8" rounded={false} zDepth={3}>

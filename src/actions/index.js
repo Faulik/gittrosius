@@ -1,7 +1,10 @@
 export const SET_USER_APP_TOKEN = 'SET_USER_APP_TOKEN'
 export const SET_USER_APP_TOKEN_SUCCESS = 'SET_USER_APP_TOKEN_SUCCESS'
 
+export const LOGIN_USER_BY_TOKEN = 'LOGIN_USER_BY_TOKEN'
 export const SIGN_OUT = 'SIGN_OUT'
+export const LOGOUT_USER = 'LOGOUT_USER'
+
 export const CHECK_ROOM = 'CHECK_ROOM'
 export const SELECT_ROOM = 'SELECT_ROOM'
 export const LEAVE_ROOM = 'LEAVE_ROOM'
@@ -90,6 +93,8 @@ export const roomJoin = {
   failure: (error) => action(ROOM_JOIN.FAILURE, {error}),
 }
 
+export const loginUserByToken = (token) => action(LOGIN_USER_BY_TOKEN, {token})
+
 export const setUserAppToken = (token) => action(SET_USER_APP_TOKEN, {token})
 export const setUserAppTokenSuccess = () => action(SET_USER_APP_TOKEN_SUCCESS)
 
@@ -110,3 +115,4 @@ export const loadRooms = () => action(LOAD_ROOMS)
 export const loadRoomMessages = (roomId) => action(LOAD_ROOM_MESSAGES, {roomId})
 
 export const signOut = () => action(SIGN_OUT)
+export const logoutUser = () => action(LOGOUT_USER)

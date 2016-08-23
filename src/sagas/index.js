@@ -26,10 +26,9 @@ function* fetchUser() {
   const {response, error} = yield call(api.fetchUser)
   if(response)
     yield put(user.success(response))
-  else {
+  else
     yield put(user.failure(error))
-    yield call(signOutUser)
-  }
+  return {response, error}
 }
 
 function* fetchUserRooms() {
@@ -198,7 +197,7 @@ function* watchCheckRoom() {
       yield put(actions.selectRoom(room.id, room.name))
       yield call(fetchRoomMessages, room.id)
     } else {
-      const { response, error} = yield call(fetchRooms)
+      const {response, error} = yield call(fetchRooms)
       if (response) {
         room = response.find((room) => room.name === name)
         if (room) {
@@ -221,6 +220,24 @@ function* watchPostMessage() {
   }
 }
 
+function* watchLoginByToken() {
+  while(true) {
+    const {token} = yield take(actions.LOGIN_USER_BY_TOKEN)
+    yield call(setToken, token)
+    const {response, error} = yield call(fetchUser)
+    console.log(response)
+    if(response)
+      history.push('/')
+  }
+}
+
+function* watchLogout() {
+  while(true) {
+    yield take(actions.LOGOUT_USER)
+    yield call(signOutUser)
+  }
+}
+
 export default function* rootSaga() {
   yield [
     fork(watchSetUserAppToken),
@@ -236,5 +253,7 @@ export default function* rootSaga() {
     fork(watchNavigate),
     fork(watchLoadRoomMessages),
     fork(watchPostMessage),
+    fork(watchLoginByToken),
+    fork(watchLogout),
   ]
 }

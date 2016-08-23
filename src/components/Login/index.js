@@ -22,6 +22,7 @@ const Login = ({ onSubmit, status, onChange, token }) => {
           floatingLabelText="Paste your token here"
           fullWidth={true}
           required={true}
+          errorText={status === 'failure' ? 'Wrong token' : ''}
           />
         <br/>
         <br/>

@@ -34,8 +34,8 @@ class LoginContainer extends Component {
   handleSubmit(e) {
     e.preventDefault();
 
-    const { actions: { setUserAppToken } } = this.props;
-    setUserAppToken(this.state.token)
+    const { actions: { loginUserByToken } } = this.props;
+    loginUserByToken(this.state.token)
   }
 
   render() {
@@ -60,7 +60,7 @@ class LoginContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    status: state.user.status
+    status: state.user.loginStatus
   }
 }
 
